@@ -29,7 +29,7 @@ app.enable('trust proxy')
 //   next();
 // });
 
-var whitelist = ['http://localhost:3000', 'http://127.0.0.1:5500']
+var whitelist = ['http://localhost:3000', 'http://127.0.0.1:5500', 'https://mog-dash.vercel.app']
 var corsOptions = {
   origin: function (origin, callback) {
     if (!origin || whitelist.indexOf(origin) !== -1) {
